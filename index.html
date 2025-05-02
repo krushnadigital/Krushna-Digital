@@ -318,7 +318,7 @@
 
   <!-- Link + Copy -->
   <div class="input-group mb-3 shadow-sm">
-    <input type="text" class="form-control" id="profileLink" value="https://example.com" readonly>
+    <input type="text" class="form-control" id="profileLink" value="https://krushnadigital.github.io/Krushna-Digital/" readonly>
     <button class="btn btn-outline-secondary" onclick="copyToClipboard()" title="Copy">
       <i class="fas fa-copy"></i>
     </button>
@@ -389,7 +389,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
       <div class="modal-body text-center">
-        <p class="mb-3"><strong>Krushna Digital</strong><br>https://example.com</p>
+        <p class="mb-3"><strong>Krushna Digital</strong><br>https://krushnadigital.github.io/Krushna-Digital/</p>
         <div class="d-flex justify-content-around flex-wrap gap-3">
           <a href="https://www.facebook.com/KrushnaDigitalArts" target="_blank" class="text-decoration-none text-dark">
             <i class="fab fa-facebook fa-2x text-primary"></i><div>Facebook</div>
@@ -479,7 +479,7 @@
       return;
     }
 
-    const url = encodeURIComponent("https://example.com");
+    const url = encodeURIComponent("https://krushnadigital.github.io/Krushna-Digital/");
     const text = encodeURIComponent("Check out this amazing profile :\n") + url;
     window.open(`https://wa.me/91${number}?text=${text}`, '_blank');
   }
@@ -493,7 +493,7 @@ function copyToClipboard() {
 
 document.getElementById("whatsappShareBtn").addEventListener("click", function () {
   const number = document.getElementById("whatsappNumber").value.trim();
-  const message = encodeURIComponent("Check out this profile: https://example.com");
+  const message = encodeURIComponent("Check out this profile: https://krushnadigital.github.io/Krushna-Digital/");
   if (/^\d{10}$/.test(number)) {
     this.href = `https://wa.me/91${number}?text=${message}`;
   } else {
